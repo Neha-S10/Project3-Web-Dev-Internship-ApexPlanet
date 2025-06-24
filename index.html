@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Styling and JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Responsive Quiz & Joke Page</h1>
+    </header>
+
+    <div class="container">
+
+        <!-- Quiz Section -->
+        <div class="quiz">
+            <h2>Quiz</h2>
+            <div class="question">
+                <p>Q1. What does CSS stand for?</p>
+                <button onclick="checkAnswer(this, false)">Computer Style Sheets</button><br>
+                <button onclick="checkAnswer(this, true)">Cascading Style Sheets</button><br>
+                <button onclick="checkAnswer(this, false)">Creative Style System</button>
+            </div>
+            <hr>
+            <div class="question">
+                <p>Q2. What is the capital of France?</p>
+                <button onclick="checkAnswer(this, true)">Paris</button><br>
+                <button onclick="checkAnswer(this, false)">London</button><br>
+                <button onclick="checkAnswer(this, false)">Berlin</button>
+            </div>
+            <hr>
+            <div class="question">
+                <p>Q2. What is the full form of HTML?</p>
+                <button onclick="checkAnswer(this, false)">Hyper Transfer Markup Language</button><br>
+                <button onclick="checkAnswer(this, false)">Hyper Text Mockup Language</button><br>
+                <button onclick="checkAnswer(this, true)">Hyper Text Markup Language</button>
+            </div>
+        </div>
+
+        <!-- Joke Section (API) -->
+        <div class="joke-section">
+            <h2>Need a Laugh?</h2>
+            <button onclick="getJoke()">Get a Random Joke</button>
+            <p class="joke" id="jokeDisplay">Click the button to load a joke!</p>
+        </div>
+
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
